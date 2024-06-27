@@ -7,7 +7,7 @@ def calcular_estadisticas_intervalos(numeros):
     #Calcular el numero de clases
     clases = 1 + (3.3*math.log10(len(numeros)))
     #Calcular el ancho de las clases
-    ancho = round(rango / math.floor(clases), 2)
+    ancho = round(rango / math.floor(clases))
     #Creacion de los arreglos vacios
     marcas_clases = []
     limite_inferior_A = []
@@ -28,5 +28,5 @@ def calcular_estadisticas_intervalos(numeros):
         marcas_clases.append(marca_clase)
 
 
-    #Retornar
+    #Retornar   
     return limite_inferior_A, limite_superior_A, marcas_clases

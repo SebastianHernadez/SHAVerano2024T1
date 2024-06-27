@@ -38,4 +38,4 @@ def calcular_estadisticas_intervalos(numeros):
   for limite_inferior, limite_superior in limites_clases:
     marca_clase = (limite_inferior + limite_superior) / 2
     marcas_clases.append(marca_clase)
-  return limite_inferior_A, limite_superior_A, marcas_clases
+  return limite_inferior_A, limite_superior_A, marcas_clases
